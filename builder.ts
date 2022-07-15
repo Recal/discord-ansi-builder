@@ -162,6 +162,10 @@ class BaseText implements Stylable {
     static of(s: string) {
         return new BaseText(s);
     }
+    
+    static reset() {
+      return new BaseText("[0m");
+    }
 
     static empty() {
       return new BaseText("");
